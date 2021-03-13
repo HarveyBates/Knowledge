@@ -15,12 +15,12 @@ Choose one of these (Vundle for rpi)
 ### Vim-plug
 https://github.com/junegunn/vim-plug
 ```vim
-:PlugInstall # Install plugin after sourcing vimrc
+:PlugInstall " Install plugin after sourcing vimrc
 ```
 ### Vundle
 https://github.com/VundleVim/Vundle.vim
 ```vim
-:PluginInstall # After sourcing vimrc
+:PluginInstall " After sourcing vimrc
 ```
 
 ## ctags

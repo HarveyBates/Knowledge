@@ -1,7 +1,6 @@
 # Raspberry Pi Webserver
 ## Description 
-Information for setting up a secure (https) webserver using a raspberry pi, nginx, certbot and a DNS provider. Followed tutorial from https://youtu.be/OWAqilIVNgE with modification (using rpi instead of cloud service provider). 
-
+Information for setting up a secure (https) webserver using a raspberry pi, nginx, certbot and a DNS provider. Followed tutorial from https://youtu.be/OWAqilIVNgE with modification (using rpi instead of cloud service provider). Other good resource https://youtu.be/QdHvS0D1zAI.
 ## Proxy Server
 ### nginx 
 1. Reverse proxy server (TCP/UDP)
@@ -78,10 +77,31 @@ Certbot certificate expires every six months
 sudo certbot renew # Renew certificate
 ```
 
+## Port Forwarding
+Need to setup port forwarding on router.
+```bash
+ip route # Find router address (LINUX)
+```
+Type address in browser, navigate to port forwarding and add:
+- Protocol: TCP
+- WAN port: 80
+- LAN port: 80
+- Desination IP: *local_ip_address*
+
+May need to also set:
+- Protocol: TCP
+- WAN port: 443
+- LAN port: 443
+- Desination IP: *local_ip_address*
+
 ## Other Commands
 ```bash
 hostname -I # Get local ip address
 curl icanhazip.com # Public IPv6 address
 curl ipv4.icanhazip.com # Public IPv4 address
 ```
+
+
+
+
 
