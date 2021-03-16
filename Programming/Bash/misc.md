@@ -27,4 +27,8 @@ Add and remove files from android device on mac. Run from GUI application after 
 ```bash
 brew install --cask android-file-transfer # Install
 ```
-
+ 
+## Delete folders
+```bash
+rm -r folder_name # Remove folder and its contents
+```

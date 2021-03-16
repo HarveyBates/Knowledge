@@ -31,9 +31,15 @@ server {
 	server_name *your_website_address*;
 
 	location / {
-		try_files $uri $uri/ =404;
+		if ($request_uri ~ ^/(.*)\.html) {
+			return 302 /$1;
+		}
+		try_files $uri $uri.html $uri/ =404;
 	}
 ```
+
+The items in locaiton allow html files to be indexed without a .html in the url
+
 Put newley created configuration into enabled sites directory:
 ```bash
 ln -s /etc/nginx/sites-available/*sitename* /etc/nginx/sites-enabled/
