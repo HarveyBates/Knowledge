@@ -1,0 +1,30 @@
+# Arduino CLI
+## Description
+Build and run arduino sketches from the command line.
+
+## Installation
+Website: https://arduino.github.io/arduino-cli/latest/installation/
+
+Homebrew:
+```bash
+brew install arduino-cli
+```
+
+## Setup
+Website: https://arduino.github.io/arduino-cli/latest/getting-started/
+
+```bash
+arduino-cli help core # Help page
+# Create config file to store commands so i dont have to type them in the terminal
+arduino-cli config init # Create yaml file 
+arduino-cli sketch new SKETCH_NAME # Create new sketch in current dir
+arduino-cli core update-index # Update cli with latest libraries and boards
+arduino-cli board list # List connected devices (core shows the device i need to install)
+arduino-cli core install arduino:samd # Install boards (change arduino:samd for core value)
+arduino-cli core list # List all installed boards
+arduino-cli lib search SEARCH_TERM # search for a library
+arduino-cli lib install LIBRARY # Install a lib from the searched items
+```
+
+If I want to install 3<sup>rd</sup> party boards see the above link.
+
