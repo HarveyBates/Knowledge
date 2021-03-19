@@ -2,6 +2,15 @@
 ## Description
 Other useful bash commands.
 
+## Random
+```bash
+top # Display current processes
+cal # Display calendar
+cal -3 # Display calendar with next and prev month
+date # Display date
+system_profiler SPDisplaysDataType |grep Resolution # Get system resolution mac
+```
+
 ## Folder tree
 Display a tree for a defined folder
 
