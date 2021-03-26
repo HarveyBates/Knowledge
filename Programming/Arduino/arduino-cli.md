@@ -28,3 +28,11 @@ arduino-cli lib install LIBRARY # Install a lib from the searched items
 
 If I want to install 3<sup>rd</sup> party boards see the above link.
 
+## Run
+```bash
+arduino-cli core update-index
+arduino-cli sketch new FILENAME # Folder must be same name as file
+arduino-cli board list # Get name of board and FQBN (Fully qualified board name)
+arduino-cli compile --fqbn arduino:avr:nano FILENAME # replace arduino bit with FQBN
+arduino-cli upload -p YourBoardPort --fqbn YourBoardFQBN YourSketchName # Upload 
+```
