@@ -36,12 +36,12 @@ URL: https://youtu.be/LH3bHMQEy7U
 
 #### Pin Table
 
-![Pin_Table](../imgs/TB67H420FTG_Pins.png)
+![Pin_Table](imgs/TB67H420FTG_Pins.png)
 
 
 #### Truth Table
 
-![Truth_Table](../imgs/TB67H420FTG_Truth_Table.png)
+![Truth_Table](imgs/TB67H420FTG_Truth_Table.png)
 
 #### Current Limiting 
 The TB67H420FTG can actively limit the current through the motors by using a fixed-frequency PWM current regulation (current chopping). This carrier board connects voltage dividers to the VREFA and VREFB pins that set the reference voltage to about 3.6 V.
