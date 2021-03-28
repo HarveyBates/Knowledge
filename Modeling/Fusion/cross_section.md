@@ -14,6 +14,6 @@ From [URL](https://knowledge.autodesk.com/support/fusion-360/troubleshooting/caa
 
 ## Result
 
-![Cross-section](../imgs/cross-section.png)
+![Cross-section](imgs/cross-section.png)
 
 
